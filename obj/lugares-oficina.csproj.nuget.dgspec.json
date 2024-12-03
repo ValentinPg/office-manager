@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/valentin/dotnet/lugares-oficina/lugares-oficina.csproj": {}
+    "e:\\code\\dotnet\\office-manager\\lugares-oficina.csproj": {}
   },
   "projects": {
-    "/home/valentin/dotnet/lugares-oficina/lugares-oficina.csproj": {
+    "e:\\code\\dotnet\\office-manager\\lugares-oficina.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/valentin/dotnet/lugares-oficina/lugares-oficina.csproj",
+        "projectUniqueName": "e:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
         "projectName": "lugares-oficina",
-        "projectPath": "/home/valentin/dotnet/lugares-oficina/lugares-oficina.csproj",
-        "packagesPath": "/home/valentin/.nuget/packages/",
-        "outputPath": "/home/valentin/dotnet/lugares-oficina/obj/",
+        "projectPath": "e:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
+        "packagesPath": "C:\\Users\\valentin\\.nuget\\packages\\",
+        "outputPath": "e:\\code\\dotnet\\office-manager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/valentin/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\valentin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,34 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
