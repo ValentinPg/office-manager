@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\code\\dotnet\\office-manager\\lugares-oficina.csproj": {}
+    "E:\\code\\dotnet\\office-manager\\lugares-oficina.csproj": {}
   },
   "projects": {
-    "e:\\code\\dotnet\\office-manager\\lugares-oficina.csproj": {
+    "E:\\code\\dotnet\\office-manager\\lugares-oficina.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
+        "projectUniqueName": "E:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
         "projectName": "lugares-oficina",
-        "projectPath": "e:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
+        "projectPath": "E:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
         "packagesPath": "C:\\Users\\valentin\\.nuget\\packages\\",
-        "outputPath": "e:\\code\\dotnet\\office-manager\\obj\\",
+        "outputPath": "E:\\code\\dotnet\\office-manager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\valentin\\AppData\\Roaming\\NuGet\\NuGet.Config"

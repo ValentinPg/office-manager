@@ -10,6 +10,9 @@ namespace lugares_oficina.src
         const int MAX_X_DAY = 10;
         Dictionary<DateTime, List<string>> seatsSchedule = new Dictionary<DateTime, List<string>>();
 
+        public Dictionary<DateTime, List<string>> SeatsSchedule{
+            get{return seatsSchedule;}
+        }
         public void AddDate(DateTime date)
         {
             seatsSchedule.Add(date, []);
@@ -20,5 +23,10 @@ namespace lugares_oficina.src
             return seatsSchedule[date];
 
         }
+
+        public void AddPerson(DateTime date,string person){
+            SearchByDate(date).Add(person);
+        }
+
     }
 }
