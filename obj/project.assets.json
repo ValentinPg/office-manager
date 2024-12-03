@@ -5513,11 +5513,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
+      "projectUniqueName": "e:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
       "projectName": "lugares-oficina",
-      "projectPath": "E:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
+      "projectPath": "e:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
       "packagesPath": "C:\\Users\\valentin\\.nuget\\packages\\",
-      "outputPath": "E:\\code\\dotnet\\office-manager\\obj\\",
+      "outputPath": "e:\\code\\dotnet\\office-manager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\valentin\\AppData\\Roaming\\NuGet\\NuGet.Config"
