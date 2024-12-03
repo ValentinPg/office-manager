@@ -7,7 +7,7 @@
 *.sln.docstates
 bin/
 obj/
-Debug/
+*.json
 # Build results
 
 [Dd]ebug/
