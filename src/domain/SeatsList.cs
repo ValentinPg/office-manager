@@ -18,8 +18,15 @@ namespace lugares_oficina.src
 
         public void AddDate(DateTime date)
         {
+            CheckSeatsCapacity();
             if (!DateExists(date))
                 seatsSchedule.Add(date, []);
+        }
+
+        private void CheckSeatsCapacity()
+        {
+            if (seatsSchedule.Count() == MAX_X_DAY)
+                throw new BusinessException("Máximo capacidad de lugares alcanzada para este día");
         }
 
         private bool DateExists(DateTime date)
