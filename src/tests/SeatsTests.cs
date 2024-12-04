@@ -23,7 +23,7 @@ namespace lugares_oficina
         {
             var seats = new SeatsList();
             seats.AddDate(DateTime.Today);
-            var dateToday = seats.SearchByDate(DateTime.Today);
+            var dateToday = seats.SearchPersonsByDate(DateTime.Today);
             Assert.Equal(dateToday, []);
         }
 
@@ -34,7 +34,7 @@ namespace lugares_oficina
             var today = DateTime.Today;
             seats.AddDate(today);
             seats.AddPerson(today, "yo");
-            Assert.Equal(seats.SearchByDate(today), ["yo"]);
+            Assert.Equal(seats.SearchPersonsByDate(today), ["yo"]);
         }
     }
 }

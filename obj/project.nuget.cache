@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pEzk60/71es=",
+  "dgSpecHash": "xBsjFcSA/F0=",
   "success": true,
-  "projectFilePath": "e:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
+  "projectFilePath": "E:\\code\\dotnet\\office-manager\\lugares-oficina.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\valentin\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\valentin\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
