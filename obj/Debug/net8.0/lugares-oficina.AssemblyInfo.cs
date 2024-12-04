@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lugares-oficina")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3bcda13623b9774ff52ec75afd030e78ea40b5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b80c3db4af717f21dbd1615457fe797a031282b")]
 [assembly: System.Reflection.AssemblyProductAttribute("lugares-oficina")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lugares-oficina")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -18,14 +18,14 @@ namespace lugares_oficina.src
 
         public void AddDate(DateTime date)
         {
-            CheckSeatsCapacity();
+            CheckSeatsCapacity(date);
             if (!DateExists(date))
                 seatsSchedule.Add(date, []);
         }
 
-        private void CheckSeatsCapacity()
+        public void CheckSeatsCapacity(DateTime date)
         {
-            if (seatsSchedule.Count() == MAX_X_DAY)
+            if (SearchPersonsByDate(date).Count() == MAX_X_DAY)
                 throw new BusinessException("Máximo capacidad de lugares alcanzada para este día");
         }
 
@@ -36,13 +36,28 @@ namespace lugares_oficina.src
 
         public List<Person> SearchPersonsByDate(DateTime date)
         {
-            return seatsSchedule[date];
+            try
+            {
+                return seatsSchedule[date];
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return [];
+            }
+
         }
 
         public void AddPerson(DateTime date, Person person)
         {
+            AddDate(date);
             SearchPersonsByDate(date).Add(person);
+        }
+
+        public void AddPerson(DateTime date, List<Person> persons)
+        {
+            persons.ForEach(person => AddPerson(date, person));
         }
 
     }
 }
+
