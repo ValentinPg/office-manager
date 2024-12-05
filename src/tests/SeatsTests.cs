@@ -4,37 +4,50 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using lugares_oficina.src;
+using lugares_oficina.src.customExceptions;
+using Microsoft.VisualBasic;
 using Xunit;
 
 namespace lugares_oficina
 {
-    public class SeatsTests
+    public class SeatsTests : IDisposable
     {
+        SeatsList seats = new SeatsList();
+        Person person1 = new Person("Juan", "Ramirez", 558156687);
+        DateTime today = DateTime.Today;
+
+
+        public void Dispose()
+        {
+            // Se ejecuta después de cada prueba
+            seats = new SeatsList();
+        }
         [Fact]
         public void AddDate()
         {
-            SeatsList seats = new SeatsList();
-            seats.AddDate(DateTime.Today);
+            seats.AddDate(today);
             Assert.NotEmpty(seats.SeatsSchedule);
         }
 
         [Fact]
         public void SearchDate()
         {
-            var seats = new SeatsList();
-            seats.AddDate(DateTime.Today);
-            var dateToday = seats.SearchByDate(DateTime.Today);
+            var dateToday = seats.SearchPersonsByDate(today);
             Assert.Equal(dateToday, []);
         }
 
         [Fact]
         public void AddPerson()
         {
-            var seats = new SeatsList();
-            var today = DateTime.Today;
-            seats.AddDate(today);
-            seats.AddPerson(today, "yo");
-            Assert.Equal(seats.SearchByDate(today), ["yo"]);
+            seats.AddPerson(today, person1);
+            Assert.Equal(seats.SearchPersonsByDate(today), [person1]);
         }
+
+        [Fact]
+        public void TestMaxPersons()
+        {
+            Assert.Throws<BusinessException>(() => seats.AddPerson(today, [person1, person1, person1, person1, person1, person1, person1, person1, person1, person1, person1]));
+        }
+
     }
 }
