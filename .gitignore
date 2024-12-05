@@ -8,6 +8,8 @@
 bin/
 obj/
 *.json
+*.cache
+AssemblyInfo.cs
 # Build results
 
 [Dd]ebug/
