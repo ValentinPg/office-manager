@@ -58,6 +58,14 @@ namespace lugares_oficina.src
             persons.ForEach(person => AddPerson(date, person));
         }
 
+        public List<DateTime> SearchByPerson(Person person)
+        {
+            return seatsSchedule.Where(item => item.Value.Contains(person)).Select(item => item.Key).ToList();
+        }
+
+    
+        
+
     }
 }
 

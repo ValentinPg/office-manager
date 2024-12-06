@@ -49,5 +49,12 @@ namespace lugares_oficina
             Assert.Throws<BusinessException>(() => seats.AddPerson(today, [person1, person1, person1, person1, person1, person1, person1, person1, person1, person1, person1]));
         }
 
+        [Fact]
+        public void TestSearchPerson()
+        {
+            seats.AddPerson(today, person1);
+            Assert.Equal([today], seats.SearchByPerson(person1));
+        }
+
     }
 }
