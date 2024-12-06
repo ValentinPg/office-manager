@@ -63,8 +63,6 @@ namespace lugares_oficina.src
             return seatsSchedule.Where(item => item.Value.Contains(person)).Select(item => item.Key).ToList();
         }
 
-    
-        
 
     }
 }

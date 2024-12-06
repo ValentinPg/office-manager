@@ -14,6 +14,7 @@ namespace lugares_oficina
     {
         SeatsList seats = new SeatsList();
         Person person1 = new Person("Juan", "Ramirez", 558156687);
+        Person person2 = new Person("Mariel", "Ramonez", 44553172);
         DateTime today = DateTime.Today;
         DateTime tomorrow = DateTime.Today.AddDays(1);
 
@@ -51,13 +52,21 @@ namespace lugares_oficina
         }
 
         [Fact]
-        public void TestSearchPerson()
+        public void TestSearchPersonWithDate()
         {
             seats.AddPerson(today, person1);
             Assert.Equal([today], seats.SearchByPerson(person1));
 
             seats.AddPerson(tomorrow, person1);
             Assert.Equal([today, tomorrow], seats.SearchByPerson(person1));
+
+
+        }
+
+        [Fact]
+        public void TestSearchPersonWithoutDate()
+        {
+            Assert.Equal([], seats.SearchByPerson(person2));
         }
 
     }
